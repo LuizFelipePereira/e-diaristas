@@ -1,12 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>E-Diaristas</title>
-</head>
-<body>
-     <h1>Pagina Inicial E-Diaristas</h1>
-</body>
-</html>
+@extends('app')
+
+@section('titulo', 'Pagina Inicial')
+
+@section('conteudo')
+    <h1>Lista de Diaristas</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Telefone</th>
+                <th scope="col">Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            @forelse ( $diaristas as $diarista )
+                <tr>
+                    <th scope="row">{{ $diarista->id }}</th>
+                    <td>{{ $diarista->nome_completo }}</td>
+                    <td>{{ $diarista->telefone }}</td>
+                    <td></td>
+                </tr>
+            @empty
+                <tr>
+                    <th></th>
+                    <td>Nenhum registro cadastrado</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            @endforelse
+        </tbody>
+    </table>
+    <a href="{{ route('diaristas.create') }}" class="btn btn-success">Nova Diarista</a>
+@endsection
