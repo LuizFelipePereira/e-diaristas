@@ -19,7 +19,9 @@
                     <th scope="row">{{ $diarista->id }}</th>
                     <td>{{ $diarista->nome_completo }}</td>
                     <td>{{ $diarista->telefone }}</td>
-                    <td></td>
+                    <td>
+                        <a href=" {{ route('diaristas.edit', $diarista) }} " class="btn btn-primary">Atualizar</a>
+                    </td>
                 </tr>
             @empty
                 <tr>
