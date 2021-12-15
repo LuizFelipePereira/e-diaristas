@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "73c2f2acec19658d2e63d23620e481f3",
+    "content-hash": "9525e03d2b52a18a08cbaaaea3e2437e",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -121,6 +121,49 @@
                 }
             ],
             "time": "2021-08-15T20:50:18+00:00"
+        },
+        {
+            "name": "clemdesign/php-mask",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/clemdesign/php-mask.git",
+                "reference": "d388a34c563d6310a9ec9b3ede4d6a429c5f2973"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/clemdesign/php-mask/zipball/d388a34c563d6310a9ec9b3ede4d6a429c5f2973",
+                "reference": "d388a34c563d6310a9ec9b3ede4d6a429c5f2973",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "8"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Clement G.",
+                    "email": "contact@clemdesign.fr"
+                }
+            ],
+            "description": "PHP-Mask is a PHP library to make masks on string.",
+            "support": {
+                "issues": "https://github.com/clemdesign/php-mask/issues",
+                "source": "https://github.com/clemdesign/php-mask/tree/1.0.0"
+            },
+            "time": "2019-05-26T15:55:39+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
@@ -5897,6 +5940,50 @@
                 "source": "https://github.com/laravel/sail"
             },
             "time": "2021-11-30T15:50:24+00:00"
+        },
+        {
+            "name": "lucascudo/laravel-pt-br-localization",
+            "version": "v1.1.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lucascudo/laravel-pt-BR-localization.git",
+                "reference": "162e26243da8592a26337c3c55e13ead80358753"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lucascudo/laravel-pt-BR-localization/zipball/162e26243da8592a26337c3c55e13ead80358753",
+                "reference": "162e26243da8592a26337c3c55e13ead80358753",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Lucascudo\\LaravelPtBRLocalization\\LaravelPtBRLocalizationServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Lucascudo\\LaravelPtBRLocalization\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Cascudo",
+                    "email": "lucas.sisau@gmail.com"
+                }
+            ],
+            "description": "Arquivos de linguagem em Português do Brasil (pt-BR) para Laravel >= 5.6",
+            "support": {
+                "issues": "https://github.com/lucascudo/laravel-pt-BR-localization/issues",
+                "source": "https://github.com/lucascudo/laravel-pt-BR-localization/tree/v1.1.10"
+            },
+            "time": "2021-09-07T08:37:58+00:00"
         },
         {
             "name": "mockery/mockery",
